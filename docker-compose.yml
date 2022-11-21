@@ -1,0 +1,16 @@
+version: '3'
+services:
+  redis:
+    image: redis:latest
+    container_name: redis
+    ports:
+      - "6379:6379"
+  courier-tracking-api:
+    build: .
+    links:
+      - redis
+    ports:
+      - "8091:8091"
+    deploy:
+      restart_policy:
+        condition: on-failure
