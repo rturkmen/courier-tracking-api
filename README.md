@@ -2,7 +2,7 @@
 
 This app provides you that tracking couriers where they are . 
 
-## How you can run the project ?
+## How can you run the project ?
 Firstly, You need to install Docker on your computer.After that you can run following commands below
 
 * mvn clean install
@@ -16,7 +16,7 @@ Firstly, You need to install Docker on your computer.After that you can run foll
 * there is no password on h2 database .You can enter db without password
 
 
-## How to use this api ?
+## How can you use this api ?
 You can access the swagger from this link -> http://localhost:8091/swagger-ui.html
 
 * After that you can create a courier from '/courier/create' endpoint
